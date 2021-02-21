@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css" type = "text/css">
+    <link rel="stylesheet" href="/css/submit.css" type = "text/css">
+    <title>Newschain: Submit an article</title>
+    <script src="../js-python/header.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <!-- Top Navbar -->
+    <header-component></header-component>
+    <div class="form-container">
+        <div class = "form-content">
+            <h1 class = "submit-head">Add New Article</h1>
+            <form>
+                <div class = form-row>
+                    <div class = form-key id = "key-one">
+                        <label for="privkey">Private Key:</label><br>
+                        <input type="text" id="privkey" name="private-key"><br>
+                    </div>
+                    <div class = form-key id = "key-two">
+                        <label for="pubkey">Public Key:</label><br>
+                        <input type="text" id="pubkey" name="public-key">                    
+                    </div>
+                </div>
+                <br>
+                <div class = form-field id = "form-article">
+                    <label for="article">Article:</label><br>
+                    <textarea id="article" rows = "20" cols = "70" name = article-content placeholder = "Write using the following format: &#10&#10Title&#10Date (mm.dd.yy)&#10Content"></textarea>  
+                </div>
+                <button type = "button">Generate Key</button>
+                <button type = "submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

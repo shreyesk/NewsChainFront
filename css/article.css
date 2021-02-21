@@ -1,0 +1,11 @@
+.text-container{
+    margin: 80px 10% auto 10%;
+    width: 80%;
+    height: 100%;
+    position: absolute;
+}
+
+#title{
+    font-weight: bold;
+    font-size: 32px;
+}
