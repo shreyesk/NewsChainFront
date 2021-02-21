@@ -1,0 +1,2 @@
+# NewsChainFront
+interface for NewsChain
