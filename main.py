@@ -38,4 +38,4 @@ def operate():
 	requests.post("http://34.106.232.173:5000/broadcast_article", params=data)
 	return flask.render_template("index.html", special_data=special_data)
 
-app.run()
+app.run(host="0.0.0.0")
