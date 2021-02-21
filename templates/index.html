@@ -76,6 +76,8 @@
 
 var myVar = "{{special_data}}";
 myVar = myVar.replaceAll("&#34;", '"');
+myVar = myVar.replaceAll("\r", "").replaceAll("\n", "\\n");
+console.log(myVar);
 myVar = JSON.parse(myVar);
 console.log(myVar);
 
